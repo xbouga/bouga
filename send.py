@@ -1,5 +1,3 @@
-import sys
-sys.path.insert(0, './python_packages')
 import smtplib
 import dns.resolver
 from email.mime.multipart import MIMEMultipart
