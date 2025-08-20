@@ -83,7 +83,7 @@ def prepare_and_send_batches(recipient_emails, subject, message, sender_email, s
         thread.join()
 
 if __name__ == "__main__":
-    sender_email = "kundenservice@akusoli-007.de"
+    sender_email = "kundenservice@akusoli-008.de"
     sender_name = "Akusoli Deutschland"
     subject = "✅Gesunde Füße, entspannter Alltag – testen Sie Akusoli jetzt"
     message = read_html_file("message.html")
@@ -91,6 +91,6 @@ if __name__ == "__main__":
     with open("mails.txt", "r") as file:
         recipient_emails = [line.strip() for line in file if line.strip()]
 
-    to_email = "kundenservice@akusoli-007.de"
+    to_email = "kundenservice@akusoli-008.de"
 
     prepare_and_send_batches(recipient_emails, subject, message, sender_email, sender_name, to_email)
