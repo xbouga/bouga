@@ -83,14 +83,14 @@ def prepare_and_send_batches(recipient_emails, subject, message, sender_email, s
         thread.join()
 
 if __name__ == "__main__":
-    sender_email = "kundenservice@tkmedicakit.net"
-    sender_name = "TK Medicare Kit"
-    subject = "kostenloses Medicare Kit von der Techniker Krankenkasse"
+    sender_email = "kundenservice@akusoli-005.de"
+    sender_name = "Akusoli Deutschland"
+    subject = "✅Gesunde Füße, entspannter Alltag – testen Sie Akusoli jetzt"
     message = read_html_file("message.html")
 
     with open("mails.txt", "r") as file:
         recipient_emails = [line.strip() for line in file if line.strip()]
 
-    to_email = "kundenservice@tkmedicakit.net"
+    to_email = "kundenservice@akusoli-005.de"
 
     prepare_and_send_batches(recipient_emails, subject, message, sender_email, sender_name, to_email)
